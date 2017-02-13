@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_light">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="GAME OVER"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gameOverTitle"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:text="GAME OVER"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gameOverScore"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="GAME OVER"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gameOverCorrect"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="GAME OVER"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gameOverMsg"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="fill_parent">
+
+        <Button
+            android:text="DONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="returnToMain"
+            android:id="@+id/fowardFromGameOver"
+            android:soundEffectsEnabled="false" />
+    </LinearLayout>
+
+</LinearLayout>

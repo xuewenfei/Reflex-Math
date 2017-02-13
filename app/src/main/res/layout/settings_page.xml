@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_light">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:text="ADDITIONS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/additionsLbl"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_light"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:elevation="0dp" />
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/additionToggle"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_dark"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:elevation="0dp"
+            android:onClick="isToggleActive"
+            android:soundEffectsEnabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:text="SUBTRACTIONS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/subtractionLbl"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_light"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/subtractionToggle"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_dark"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:onClick="isToggleActive"
+            android:soundEffectsEnabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:text="MULTIPLICATIONS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/multiplicationsLbl"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_light"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/multiplicationToggle"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_dark"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:onClick="isToggleActive"
+            android:soundEffectsEnabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="DIVISIONS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/divisionsLbl"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_light"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/divisionToggle"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_dark"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:onClick="isToggleActive"
+            android:soundEffectsEnabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="fill_parent">
+
+        <Button
+            android:text="BACK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsCancel"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:onClick="toMain"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center_vertical"
+            android:soundEffectsEnabled="false" />
+
+        <Button
+            android:text="NEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsStart"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:textSize="26sp"
+            android:onClick="toDifficultyPage"
+            android:textAlignment="center"
+            android:soundEffectsEnabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"></LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_light">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="CHOOSE A GAME TYPE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/typeLbl"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" >
+
+        <Button
+            android:text="CHALLENGE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="toSettings"
+            android:id="@+id/fowardFromType"
+            android:tag="0"
+            android:soundEffectsEnabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:text="5 SECONDS BETWEEN QUESTIONS, X2 POINTS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/descLbl1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:layout_marginBottom="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" >
+
+        <Button
+            android:text="CASUAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="toSettings"
+            android:id="@+id/fowardFromType1"
+            android:tag="1"
+            android:soundEffectsEnabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:text="10 SECONDS BETWEEN QUESTIONS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/descLbl2"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:layout_marginBottom="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" >
+
+        <Button
+            android:text="PRACTICE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="toSettings"
+            android:id="@+id/fowardFromType2"
+            android:tag="2"
+            android:soundEffectsEnabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:text="UNLIMITED TIME, NO POINTS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/descLbl3"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:layout_marginBottom="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="fill_parent">
+
+        <Button
+            android:text="BACK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="backToStart"
+            android:id="@+id/backFromType"
+            android:soundEffectsEnabled="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
